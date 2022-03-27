@@ -18,7 +18,7 @@ export const Resultprovider = ({ children }) => {
         "X-User-Agent": "desktop",
         "X-Proxy-Location": "EU",
         "X-RapidAPI-Host": "google-search3.p.rapidapi.com",
-        "X-RapidAPI-Key": "dffdb0b6d3mshac33ba299638d43p12944bjsn1343ef7264f7",
+        "X-RapidAPI-Key": process.env.GOOGLE_SEARCH_API,
       },
     });
 
@@ -37,7 +37,7 @@ export const Resultprovider = ({ children }) => {
      headers: {
     'X-BingApis-SDK': 'true',
     'X-RapidAPI-Host': 'bing-news-search1.p.rapidapi.com',
-    'X-RapidAPI-Key': 'dffdb0b6d3mshac33ba299638d43p12944bjsn1343ef7264f7'
+    'X-RapidAPI-Key': process.env.BING_NEWS_API
      },
     });
 
